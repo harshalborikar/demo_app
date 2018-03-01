@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/light_yellow">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:background="@color/cardview_dark_background">
+
+            <ImageView
+                android:id="@+id/image_view"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/small_margin" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/movie_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/little_small_margin"
+            android:padding="@dimen/medium_padding"
+            android:text="@string/MovieName"
+            android:textAlignment="center"
+            android:textSize="@dimen/medium_text_size"
+            android:textStyle="italic"
+            android:textColor="@color/red_brown"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/little_small_margin">
+
+            <TextView
+                android:id="@+id/year"
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/small_margin"
+                android:padding="@dimen/small_padding"
+                android:text="@string/year" />
+
+            <TextView
+                android:id="@+id/released"
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="@dimen/small_margin"
+                android:padding="@dimen/small_padding"
+                android:text="@string/released"
+                android:textAlignment="textEnd" />
+
+            <TextView
+                android:id="@+id/rated"
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/year"
+                android:layout_marginStart="@dimen/small_margin"
+                android:padding="@dimen/small_padding"
+                android:text="@string/rated" />
+
+            <TextView
+                android:id="@+id/runtime"
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                android:layout_alignStart="@+id/released"
+                android:layout_below="@+id/released"
+                android:padding="@dimen/small_padding"
+                android:text="@string/runtime"
+                android:textAlignment="textEnd" />
+
+            <TextView
+                android:id="@+id/director"
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/rated"
+                android:layout_marginStart="@dimen/small_margin"
+                android:padding="@dimen/small_padding"
+                android:text="@string/director" />
+
+            <TextView
+                android:id="@+id/language"
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                android:layout_alignStart="@+id/runtime"
+                android:layout_below="@+id/runtime"
+                android:padding="@dimen/small_padding"
+                android:text="@string/language"
+                android:textAlignment="textEnd" />
+
+            <TextView
+                android:id="@+id/genre"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignEnd="@+id/language"
+                android:layout_below="@+id/director"
+                android:layout_marginStart="@dimen/small_margin"
+                android:padding="@dimen/small_padding"
+                android:text="@string/genre" />
+
+            <TextView
+                android:id="@+id/country"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignEnd="@+id/language"
+                android:layout_below="@+id/genre"
+                android:layout_marginStart="@dimen/small_margin"
+                android:padding="@dimen/small_padding"
+                android:text="@string/country" />
+
+            <TextView
+                android:id="@+id/awards"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignEnd="@+id/language"
+                android:layout_below="@+id/country"
+                android:layout_marginStart="@dimen/small_margin"
+                android:padding="@dimen/small_padding"
+                android:text="@string/awards" />
+
+
+            <TextView
+                android:id="@+id/writers"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignEnd="@+id/language"
+                android:layout_below="@+id/awards"
+                android:layout_marginStart="@dimen/small_margin"
+                android:padding="@dimen/small_padding"
+                android:text="@string/writers" />
+
+            <TextView
+                android:id="@+id/actors"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignEnd="@+id/language"
+                android:layout_below="@+id/writers"
+                android:layout_marginStart="@dimen/small_margin"
+                android:padding="@dimen/small_padding"
+                android:text="@string/actors" />
+
+            <TextView
+                android:id="@+id/plot"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignEnd="@+id/language"
+                android:layout_below="@+id/actors"
+                android:layout_marginStart="@dimen/small_margin"
+                android:padding="@dimen/small_padding"
+                android:text="@string/plot" />
+
+
+
+            <TextView
+                android:id="@+id/metascore"
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/plot"
+                android:layout_marginStart="@dimen/small_margin"
+                android:padding="@dimen/small_padding"
+                android:text="@string/metascore" />
+
+            <TextView
+                android:id="@+id/imdbratings"
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                android:layout_alignEnd="@+id/plot"
+                android:layout_below="@+id/plot"
+                android:padding="@dimen/small_padding"
+                android:text="@string/imdbrating"
+                android:textAlignment="textEnd" />
+
+            <TextView
+                android:id="@+id/imdbvotes"
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/metascore"
+                android:layout_marginStart="@dimen/small_margin"
+                android:padding="@dimen/small_padding"
+                android:text="@string/imdbvotes" />
+
+            <TextView
+                android:id="@+id/imdbId"
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                android:layout_alignEnd="@+id/language"
+                android:layout_below="@+id/imdbratings"
+                android:layout_marginStart="@dimen/small_margin"
+                android:padding="@dimen/small_padding"
+                android:text="@string/imdbid"
+                android:textAlignment="textEnd" />
+
+            <TextView
+                android:id="@+id/type"
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/imdbvotes"
+                android:layout_marginStart="@dimen/small_margin"
+                android:padding="@dimen/small_padding"
+                android:text="@string/type" />
+
+            <TextView
+                android:id="@+id/dvd"
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                android:layout_alignEnd="@+id/language"
+                android:layout_below="@+id/imdbId"
+                android:layout_marginStart="@dimen/small_margin"
+                android:padding="@dimen/small_padding"
+                android:text="@string/dvd"
+                android:textAlignment="textEnd" />
+
+
+            <TextView
+                android:id="@+id/boxoffice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignEnd="@+id/dvd"
+                android:layout_below="@+id/type"
+                android:layout_marginStart="@dimen/small_margin"
+                android:padding="@dimen/small_padding"
+                android:text="@string/boxoffice" />
+
+            <TextView
+                android:id="@+id/production"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignEnd="@+id/dvd"
+                android:layout_below="@+id/boxoffice"
+                android:layout_marginStart="@dimen/small_margin"
+                android:padding="@dimen/small_padding"
+                android:text="@string/production" />
+
+            <TextView
+                android:id="@+id/website"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignEnd="@+id/dvd"
+                android:layout_below="@+id/production"
+                android:layout_marginStart="@dimen/small_margin"
+                android:padding="@dimen/small_padding"
+                android:autoLink="web"
+                android:text="@string/website" />
+
+            <TextView
+                android:id="@+id/ratings"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignEnd="@+id/dvd"
+                android:layout_below="@+id/website"
+                android:layout_marginStart="@dimen/small_margin"
+                android:padding="@dimen/small_padding"
+                android:text="@string/rating" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</ScrollView>
